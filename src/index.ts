@@ -295,7 +295,7 @@ export const DefaultCodeScannerOptions = {
 };
 
 const plugin =
-  VisionCameraProxy.getFrameProcessorPlugin<Barcode[]>('scanCodes');
+  VisionCameraProxy.getFrameProcessorPlugin('scanCodes');
 
 /**
  * Scans barcodes in the passed frame with MLKit
