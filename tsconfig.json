@@ -1,6 +1,5 @@
 {
   "compilerOptions": {
-    "ignoreDepre"
     "baseUrl": "./",
     "paths": {
       "react-native-vision-camera": ["node_modules/react-native-vision-camera/src"],
