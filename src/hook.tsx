@@ -31,7 +31,7 @@ export function useScanBarcodes(
     }, {} as CodeScannerOptions);
     const detectedBarcodes = scanBarcodes(frame, Array.from(types), opts);
     try {
-      if (typeof detectedBarcodes === typeof Barcode[]) {
+      if (typeof detectedBarcodes === typeof barcodes) {
         setBarcodesJS(detectedBarcodes);
       }
     } catch(_){}
