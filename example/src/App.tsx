@@ -5,6 +5,9 @@ import { Camera, useCameraDevices } from 'react-native-vision-camera';
 import { BarcodeFormat, useScanBarcodes } from 'vision-camera-code-scanner';
 
 export default function App() {
+
+  return <Text>Nothing</Text>;
+  
   const [hasPermission, setHasPermission] = React.useState(false);
   const [frameProcessor, barcodes] = useScanBarcodes([
     BarcodeFormat.ALL_FORMATS,
