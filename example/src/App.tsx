@@ -6,8 +6,9 @@ import { BarcodeFormat, useScanBarcodes } from 'vision-camera-code-scanner';
 
 export default function App() {
 
-  return <Text>Nothing</Text>;
   
+  
+  /*
   const [hasPermission, setHasPermission] = React.useState(false);
   const [frameProcessor, barcodes] = useScanBarcodes([
     BarcodeFormat.ALL_FORMATS,
@@ -27,6 +28,9 @@ export default function App() {
     console.log(barcodes);
   }, [barcodes]);
 
+  */
+return <Text>Nothing</Text>;
+  /*
   return (
     device != null &&
     hasPermission && (
@@ -44,7 +48,7 @@ export default function App() {
         ))}
       </>
     )
-  );
+  );*/
 }
 
 const styles = StyleSheet.create({
