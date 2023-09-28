@@ -308,12 +308,12 @@ export function scanBarcodes(
   frame: Frame,
   types: BarcodeFormat[],
   options: CodeScannerOptions = DefaultCodeScannerOptions
-): Barcode[] {
+): Barcode[] | undefined {
   'worklet';
 
   if (plugin == null)
     throw new Error('Failed to load Frame Processor Plugin "scanCodes"!');
-
+  
   return plugin.call(frame, {
     ...options,
     types,
