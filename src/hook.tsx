@@ -30,7 +30,11 @@ export function useScanBarcodes(
       return acc;
     }, {} as CodeScannerOptions);
     const detectedBarcodes = scanBarcodes(frame, Array.from(types), opts);
-    setBarcodesJS(detectedBarcodes);
+    try {
+      if (typeof detectedBarcodes === Barcode[]) {
+        setBarcodesJS(detectedBarcodes);
+      }
+    } catch(_){}
   }, []);
 
   return [frameProcessor, barcodes];
